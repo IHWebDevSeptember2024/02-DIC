@@ -4,19 +4,6 @@ const ThemeContext = createContext(); // ya está creado el contexto, LOL, que f
 
 function ThemeProviderWrapper(props) {
   const [theme, setTheme] = useState("light");
-  const [cart, setCart] = useState([]);
-  const [language, setLanguage] = useState("");
-
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition((position) => {
-      console.log(position);
-    });
-    if (navigator.language) {
-      console.log(navigator.language);
-
-      setLanguage(navigator.language);
-    }
-  }, []);
 
   function toggleTheme() {
     /* if (theme === "light") {
@@ -29,7 +16,7 @@ function ThemeProviderWrapper(props) {
   }
 
   return (
-    <ThemeContext.Provider value={{ toggleTheme, theme, language }}>
+    <ThemeContext.Provider value={{ toggleTheme, theme }}>
       {/* ESTO TIENE QUE SER VALUE 
         value será algo así:
         {

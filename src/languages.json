@@ -1,8 +1,14 @@
 {
-  "es-ES": {
-    "heading": "bienvenida a tu página"
-  },
-  "en": {
-    "heading": "hey what's up!"
+  "headings": {
+    "en-US": "Welcome",
+    "es-ES": "Bienvenida",
+    "fr-FR": "Bienvenue",
+    "de-DE": "Willkommen",
+    "it-IT": "Benvenuta",
+    "pt-PT": "Bem-vinda",
+    "zh-CN": "欢迎",
+    "ja-JP": "ようこそ",
+    "ko-KR": "환영합니다",
+    "ru-RU": "Добро пожаловать"
   }
 }
